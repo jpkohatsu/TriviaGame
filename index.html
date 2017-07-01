@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<!-- Added link to Bootstrap -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Added Google Font -->
+  	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  	<link rel = "stylesheet" type = "text/css" href="assets/css/style.css">
+	<title>Trivia Game</title>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="page-header">
+			<h1>Totally Trivial Trivia!</h1>
+		</div>
+		
+		<div class="time-clock">
+			<h3>Time Remaining:</h3>
+			<p><span id="stop-clock">0:00</span></p>
+		</div>
+
+		<center><button id="start">Start Trivia</button></center>	
+
+		<div class="questions">
+			<div class="question" id="question1">
+				<p>Which of these composers was not born in Germany?</p>
+				<button>Ludwig van Beethoven</button>
+				<button>Wolfgang Adameus Mozart</button>
+				<button>Johann Sebastian Bach</button>
+				<button>Johannes Brahms</button>
+			</div>
+
+			<div class="question" id="question2">
+				<p>Which of these composers was deaf?</p>
+				<button>Ludwig van Beethoven</button>
+				<button>Wolfgang Adameus Mozart</button>
+				<button>Johann Sebastian Bach</button>
+				<button>Johann Brahms</button>
+			</div>
+
+			<div class="question" id="question3">
+				<p>Where did martial arts come from?</p>
+				<button>China</button>
+				<button>Japan</button>
+				<button>Korea</button>
+				<button>Mongolia</button>
+			</div>
+
+			<div class="question" id="question4">
+				<p>Where in Japan did Karate originate from?</p>
+				<button>Tokyo</button>
+				<button>Okinawa</button>
+				<button>Osaka</button>
+				<button>Sendai</button>
+			</div>
+
+			<div class="question" id="question5">
+				<p>The second atomic bomb ever used in war-time was dropped on what city??</p>
+				<button>Hiroshima</button>
+				<button>Kyoto</button>
+				<button>Yokohama</button>
+				<button>Nagasaki</button>
+			</div>
+
+			<center><button id="submit">Submit Results</button></center>
+
+		</div>
+
+		<div class="panel panel-default results">
+			<div class="panel-heading">Trivia Results</div>
+			<div class="panel-body">
+				<ul class="list-group">
+	    			<li id="correct"></li>
+					<li id="incorrect"></li>
+					<li id="unanswered"></li>
+				</ul>
+  			</div>		
+		</div>
+
+	
+
+
+
+
+	</div>
+
+
+		<!-- Added link to the jQuery Library -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	<script src="assets/javascript/app.js"></script>	
+</body>
+</html>
